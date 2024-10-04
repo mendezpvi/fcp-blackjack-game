@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Jack';
+  src: url('./assets/font/Jack-Rooney.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-block-size: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Jack', sans-serif;
+  background: url('./assets/image/blackjack.webp') no-repeat center;
+  background-size: cover;
+}
+
+.main {
+  margin-block: 2em;
+  inline-size: 22rem;
+  background-color: #00712Dce;
+  color: #E9EFEC;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px #1A3636;
+}
+
+.title {
+  font-size: 3rem;
+  color: #FFEB00;
+  text-shadow: 3px 3px #1A3636;
+}
+
+.paragraph {
+  font-size: 1.3rem;
+  text-shadow: 0 0 2px #1A3636;
+}
+
+.buttons {
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+}
+
+.btn {
+  padding-block: .25em;
+  inline-size: 12rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid currentColor;
+  color: #1A3636;
+}
+
+.footer {
+  margin-top: 2em;
+  color: #1A3636;
+  text-align: center;
+}
+.footer-cta {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  color: inherit;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+@media (hover:hover) {
+  .btn:not(:disabled):hover {
+    background-color: #1A3636;
+    color: #E9EFEC;
+  }
+}
